@@ -13,7 +13,7 @@ export const Uppgift3 = () => {
 	const buttons = () => {
 		return <div>
 			<button onClick={() => setCount(count + 1)}>Increment</button> <br />
-			<button onClick={() => makuSureCharacterNumberNeverGetsBelow()}>Decrement</button>
+			<button onClick={() => makuSureCountNeverGetsBelowOne()}>Decrement</button>
 		</div>
 	}
 
@@ -29,7 +29,7 @@ export const Uppgift3 = () => {
 	getCharacterNameFromStarwarsAPI()
 	},[count])
 
-	const makuSureCharacterNumberNeverGetsBelow  = () => {
+	const makuSureCountNeverGetsBelowOne  = () => {
 		(count <= 1) ? setCount(1) : setCount(count - 1)
 	}
 
